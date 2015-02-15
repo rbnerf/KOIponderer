@@ -19,7 +19,7 @@
 - (void)add:(NSControl *)sender {
 	_lastTag = sender.tag;
 	[super add:sender];
-	NSUInteger theIndex = self.selectionIndex;
+	//NSUInteger theIndex = self.selectionIndex;
 	//NSLog(@"STAR ADDED at %lu", theIndex);
 }
 - (id) newObject {
