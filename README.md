@@ -2,6 +2,7 @@ KOI Ponderer
 ============
 An OS-X interactive viewer for long-candence light-curves from NASA's Kepler spacecraft.
 ________________________________________________________________________________________
+KOI is an acronym for Kepler Object of Interest -- a star with intensity variations that might be due to eclipses from an exoplanet.
 The Kepler spacecraft carried a telescope system designed to stare intently at over 100,000 stars, precisely recording their light, so that any eclipses caused by orbiting planets could be detected and analyzed. The processing of this data was an enormous task, requiring attention to detail, precise correction for known instrumental effects, and the search for signals obscured by a variety of nasty noises.
 
 The data displays and diagnostic materials were useful for professionals with a detailed understanding of the system, but were overwhelming for a less-experienced person trying to get “a feel for the data”.
@@ -35,3 +36,19 @@ The KOI Ponderer application initially contains a database of some seven thousan
 	* "Stacked" summation of flux values for period and epoch.
 	* Colored marking of all eclipse sequences to highlight potential interferences.
 	* Basic ability to compute and remove/add simple eclipse curves to data.
+	
+### To Build
+	* Obtain Xcode from the Mac App Store
+	* Use Safari to view https://github.com/rbnerf/KOIponderer#koi-ponderer
+	* At lower right, press button [Download ZIP]
+	* When download is complete, file will be unzipped into a directory
+	named KOIponderer-master
+	* Use Finder to view the contents of that directory
+	* Double-click on KOIponderer.xcodeproject; Xcode will launch.
+	* If you are not an "Admin" user, make sure the "Scheme" at upper left
+	is KOIrelease, rather than KOIponderer.
+	* Press the Arrow key at upper right to initiate Build/Run.
+	* "Normal" error messages: 
+		Downloader.xib -- Unsupported configuration
+		Images.xcassets -- A bunch of contradictory complaints about image dimensions.
+	* The app should launch -- follow the directions in KOIponderer.pdf
