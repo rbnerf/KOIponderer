@@ -39,6 +39,7 @@ int compareFluxes(const void *a, const void *b){
 		return -1;
 	}
 }
+
 @implementation KIGLView
 
 - (void) longCadencesDidFinishDownloading:(NSNotification *)notification{
@@ -346,7 +347,7 @@ int compareFluxes(const void *a, const void *b){
 	KIStackCurve *slc = self.stackCurve;
 	slc.calcLength = 0;
 	if (sortCount<=0) {
-		NSLog(@"STACK SORT COUNT=%d",sortCount);
+		//NSLog(@"STACK SORT COUNT=%d",sortCount);
 		return;
 	}
 	if (1) {

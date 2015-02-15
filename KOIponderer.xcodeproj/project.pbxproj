@@ -25,8 +25,6 @@
 		1CBFEFAF1A68786F003E27BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBFEF8B1A68786F003E27BE /* Cocoa.framework */; };
 		1CBFEFB71A68786F003E27BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFEFB51A68786F003E27BE /* InfoPlist.strings */; };
 		1CBFEFB91A68786F003E27BE /* KOIpondererTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFEFB81A68786F003E27BE /* KOIpondererTests.m */; };
-		1CD58C981A8ED0E1000262DB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1CD58C971A8ED0E1000262DB /* README.md */; };
-		1CD58C9A1A8ED952000262DB /* KOIponderer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD58C991A8ED952000262DB /* KOIponderer.pdf */; };
 		1CDD29211A687DFC007D1FF5 /* FITSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD291C1A687DFC007D1FF5 /* FITSCard.m */; };
 		1CDD29221A687DFC007D1FF5 /* FITSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD291E1A687DFC007D1FF5 /* FITSFile.m */; };
 		1CDD29231A687DFC007D1FF5 /* FITSHeaderDataUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD29201A687DFC007D1FF5 /* FITSHeaderDataUnit.m */; };
@@ -83,8 +81,6 @@
 		1CBFEFB41A68786F003E27BE /* KOIpondererTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KOIpondererTests-Info.plist"; sourceTree = "<group>"; };
 		1CBFEFB61A68786F003E27BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1CBFEFB81A68786F003E27BE /* KOIpondererTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOIpondererTests.m; sourceTree = "<group>"; };
-		1CD58C971A8ED0E1000262DB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		1CD58C991A8ED952000262DB /* KOIponderer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = KOIponderer.pdf; sourceTree = "<group>"; };
 		1CDD291B1A687DFC007D1FF5 /* FITSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSCard.h; sourceTree = "<group>"; };
 		1CDD291C1A687DFC007D1FF5 /* FITSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITSCard.m; sourceTree = "<group>"; };
 		1CDD291D1A687DFC007D1FF5 /* FITSFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSFile.h; sourceTree = "<group>"; };
@@ -227,8 +223,6 @@
 				1CDD29201A687DFC007D1FF5 /* FITSHeaderDataUnit.m */,
 				1CBFEFA61A68786F003E27BE /* Images.xcassets */,
 				1CBFEF921A68786F003E27BE /* Supporting Files */,
-				1CD58C971A8ED0E1000262DB /* README.md */,
-				1CD58C991A8ED952000262DB /* KOIponderer.pdf */,
 			);
 			path = KOIponderer;
 			sourceTree = "<group>";
@@ -341,10 +335,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CBAC9601A6F72C400276D06 /* KOIs.csv in Resources */,
-				1CD58C9A1A8ED952000262DB /* KOIponderer.pdf in Resources */,
 				1CBFEF961A68786F003E27BE /* InfoPlist.strings in Resources */,
 				1CBFEFA71A68786F003E27BE /* Images.xcassets in Resources */,
-				1CD58C981A8ED0E1000262DB /* README.md in Resources */,
 				1CBFEF9C1A68786F003E27BE /* Credits.rtf in Resources */,
 				1CBFEFA21A68786F003E27BE /* MainMenu.xib in Resources */,
 				1CDD294B1A687F10007D1FF5 /* Downloader.xib in Resources */,

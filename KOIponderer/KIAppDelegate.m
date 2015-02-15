@@ -37,7 +37,7 @@
 	self.starController.sortDescriptors = @[sortOnCandidateCount,sortOnKOI];
 	if (_needToInitializeDBP) {
 		NSURL* url = [[NSBundle mainBundle] URLForResource:@"KOIs" withExtension:@"csv"];
-		NSLog(@"%@",url);
+		//NSLog(@"%@",url);
 		[self readKOIcsvFromURL:url];
 	}
 	
@@ -260,7 +260,7 @@
 		n++;
 		NSArray *columns = [line componentsSeparatedByString:@","];
 		if (columns.count != keys.count) {
-			NSLog(@"Skipping at csv:%d",n);
+			NSLog(@"Skipping/Ending at csv row:%d",n);
 			continue;
 		}
 		NSDictionary *values = [NSDictionary dictionaryWithObjects:columns forKeys:keys];
@@ -308,7 +308,7 @@
 	fetch.predicate = noKPStar;
 	NSError *error;
 	NSArray * lcs = [self.managedObjectContext executeFetchRequest:fetch error:&error];
-	NSLog (@"%lu resampled curves",(unsigned long)lcs.count);
+	NSLog (@"Deleting %lu resampled curves",(unsigned long)lcs.count);
 	for (KPLightCurve *lc in lcs) {
 		[self.managedObjectContext deleteObject:lc];
 	}

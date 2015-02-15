@@ -20,7 +20,7 @@
 	_lastTag = sender.tag;
 	[super add:sender];
 	NSUInteger theIndex = self.selectionIndex;
-	NSLog(@"STAR ADDED at %lu", theIndex);
+	//NSLog(@"STAR ADDED at %lu", theIndex);
 }
 - (id) newObject {
 	self.star = [super newObject];
@@ -36,12 +36,12 @@
 		default:
 			break;
 	}
-	NSLog(@"%ld NEW STAR:%@",_lastTag,self.star);
+	//NSLog(@"%ld NEW STAR:%@",_lastTag,self.star);
 	return self.star;
 }
 - (void)insert:(id)sender {
 	[super insert:sender];
-	NSLog(@"STAR INSERTED");
+	//NSLog(@"STAR INSERTED");
 }
 - (void) loadCurvesFromDownload {
 	if (!_downloadWindowController) {
