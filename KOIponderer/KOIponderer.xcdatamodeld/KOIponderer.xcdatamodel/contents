@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="V1" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5064" systemVersion="13E28" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="KPCandidate" representedClassName="KPCandidate" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="depth" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="disposition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="epoch" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fBlue" optional="YES" attributeType="Float" maxValueString="1" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fGreen" optional="YES" attributeType="Float" maxValueString="1" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fRed" optional="YES" attributeType="Float" maxValueString="1" defaultValueString="1" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="impact" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="ingress" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="koiID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="period" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="starID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="visibleP" optional="YES" transient="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <relationship name="kpOcclusions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="KPOcclusion" inverseName="kpCandidate" inverseEntity="KPOcclusion" syncable="YES"/>
+        <relationship name="kpStar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KPStar" inverseName="kpCandidates" inverseEntity="KPStar" syncable="YES"/>
+    </entity>
+    <entity name="KPData" representedClassName="KPData" syncable="YES">
+        <attribute name="data" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="dataDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="glBufferID" transient="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="tempData" optional="YES" transient="YES" attributeType="Binary" syncable="YES"/>
+        <relationship name="kpLightCurve" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KPLightCurve" inverseName="kpData" inverseEntity="KPLightCurve" syncable="YES"/>
+        <relationship name="kpOcclusions" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="KPOcclusion" inverseName="kpData" inverseEntity="KPOcclusion" syncable="YES"/>
+    </entity>
+    <entity name="KPLightCurve" representedClassName="KPLightCurve" syncable="YES">
+        <attribute name="fileName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fluxMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fluxMedian" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fluxMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="fluxShift" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sampleCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeMax" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeMaxIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeMin" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="timeMinIndex" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="visibleP" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <relationship name="kpData" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="KPData" inverseName="kpLightCurve" inverseEntity="KPData" syncable="YES"/>
+        <relationship name="kpStar" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KPStar" inverseName="kpLightCurves" inverseEntity="KPStar" syncable="YES"/>
+        <relationship name="rsStar" optional="YES" transient="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KPStar" inverseName="rsLightCurve" inverseEntity="KPStar" syncable="YES"/>
+    </entity>
+    <entity name="KPOcclusion" representedClassName="KPOcclusion" syncable="YES">
+        <attribute name="gate" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="indexA" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="indexB" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="tMid" optional="YES" transient="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="kpCandidate" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KPCandidate" inverseName="kpOcclusions" inverseEntity="KPCandidate" syncable="YES"/>
+        <relationship name="kpData" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="KPData" inverseName="kpOcclusions" inverseEntity="KPData" syncable="YES"/>
+    </entity>
+    <entity name="KPStar" representedClassName="KPStar" syncable="YES">
+        <attribute name="comment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="koiID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" defaultValueString="&lt;NoData>" syncable="YES"/>
+        <relationship name="kpCandidates" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="KPCandidate" inverseName="kpStar" inverseEntity="KPCandidate" syncable="YES"/>
+        <relationship name="kpLightCurves" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="KPLightCurve" inverseName="kpStar" inverseEntity="KPLightCurve" syncable="YES"/>
+        <relationship name="rsLightCurve" optional="YES" transient="YES" maxCount="1" deletionRule="Cascade" destinationEntity="KPLightCurve" inverseName="rsStar" inverseEntity="KPLightCurve" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="KPCandidate" positionX="-164" positionY="-478" width="128" height="298"/>
+        <element name="KPData" positionX="45" positionY="-52" width="128" height="133"/>
+        <element name="KPLightCurve" positionX="-144" positionY="-163" width="128" height="253"/>
+        <element name="KPOcclusion" positionX="43" positionY="-234" width="128" height="133"/>
+        <element name="KPStar" positionX="-387" positionY="-306" width="128" height="163"/>
+    </elements>
+</model>
