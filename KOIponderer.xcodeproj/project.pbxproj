@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C54BEC01A688D4000CC4119 /* KPData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C54BEBF1A688D4000CC4119 /* KPData.m */; };
+		1C54BEC41A69A6C000CC4119 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C54BEC11A69A6C000CC4119 /* OpenGL.framework */; };
+		1C54BEC51A69A6C000CC4119 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C54BEC21A69A6C000CC4119 /* Quartz.framework */; };
+		1C54BEC61A69A6C000CC4119 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C54BEC31A69A6C000CC4119 /* WebKit.framework */; };
+		1CBAC9601A6F72C400276D06 /* KOIs.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1CBAC95F1A6F72C400276D06 /* KOIs.csv */; };
+		1CBAC9631A70D9A500276D06 /* KICandidateTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBAC9621A70D9A500276D06 /* KICandidateTableView.m */; };
+		1CBFEF8C1A68786F003E27BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBFEF8B1A68786F003E27BE /* Cocoa.framework */; };
+		1CBFEF961A68786F003E27BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFEF941A68786F003E27BE /* InfoPlist.strings */; };
+		1CBFEF981A68786F003E27BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFEF971A68786F003E27BE /* main.m */; };
+		1CBFEF9C1A68786F003E27BE /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFEF9A1A68786F003E27BE /* Credits.rtf */; };
+		1CBFEF9F1A68786F003E27BE /* KIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFEF9E1A68786F003E27BE /* KIAppDelegate.m */; };
+		1CBFEFA21A68786F003E27BE /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFEFA01A68786F003E27BE /* MainMenu.xib */; };
+		1CBFEFA51A68786F003E27BE /* KOIponderer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFEFA31A68786F003E27BE /* KOIponderer.xcdatamodeld */; };
+		1CBFEFA71A68786F003E27BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFEFA61A68786F003E27BE /* Images.xcassets */; };
+		1CBFEFAE1A68786F003E27BE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBFEFAD1A68786F003E27BE /* XCTest.framework */; };
+		1CBFEFAF1A68786F003E27BE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CBFEF8B1A68786F003E27BE /* Cocoa.framework */; };
+		1CBFEFB71A68786F003E27BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CBFEFB51A68786F003E27BE /* InfoPlist.strings */; };
+		1CBFEFB91A68786F003E27BE /* KOIpondererTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CBFEFB81A68786F003E27BE /* KOIpondererTests.m */; };
+		1CD58C981A8ED0E1000262DB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1CD58C971A8ED0E1000262DB /* README.md */; };
+		1CD58C9A1A8ED952000262DB /* KOIponderer.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1CD58C991A8ED952000262DB /* KOIponderer.pdf */; };
+		1CDD29211A687DFC007D1FF5 /* FITSCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD291C1A687DFC007D1FF5 /* FITSCard.m */; };
+		1CDD29221A687DFC007D1FF5 /* FITSFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD291E1A687DFC007D1FF5 /* FITSFile.m */; };
+		1CDD29231A687DFC007D1FF5 /* FITSHeaderDataUnit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD29201A687DFC007D1FF5 /* FITSHeaderDataUnit.m */; };
+		1CDD29271A687E3C007D1FF5 /* KDWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD29251A687E3C007D1FF5 /* KDWindowController.m */; };
+		1CDD29301A687E89007D1FF5 /* KIGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD29291A687E89007D1FF5 /* KIGLView.m */; };
+		1CDD29311A687E89007D1FF5 /* KINotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD292B1A687E89007D1FF5 /* KINotifications.m */; };
+		1CDD29321A687E89007D1FF5 /* KIStackCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD292D1A687E89007D1FF5 /* KIStackCurve.m */; };
+		1CDD29331A687E89007D1FF5 /* KIStarsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD292F1A687E89007D1FF5 /* KIStarsController.m */; };
+		1CDD29421A687EAD007D1FF5 /* KPCandidate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD29351A687EAD007D1FF5 /* KPCandidate.m */; };
+		1CDD29441A687EAD007D1FF5 /* KPLightCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD29391A687EAD007D1FF5 /* KPLightCurve.m */; };
+		1CDD29451A687EAD007D1FF5 /* KPLightCurve+AddOns.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD293B1A687EAD007D1FF5 /* KPLightCurve+AddOns.m */; };
+		1CDD29461A687EAD007D1FF5 /* KPOcclusion.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD293D1A687EAD007D1FF5 /* KPOcclusion.m */; };
+		1CDD29471A687EAD007D1FF5 /* KPStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD293F1A687EAD007D1FF5 /* KPStar.m */; };
+		1CDD29481A687EAD007D1FF5 /* KPStar+AddOns.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CDD29411A687EAD007D1FF5 /* KPStar+AddOns.m */; };
+		1CDD294B1A687F10007D1FF5 /* Downloader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CDD29491A687F10007D1FF5 /* Downloader.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CBFEFB01A68786F003E27BE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CBFEF801A68786F003E27BE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CBFEF871A68786F003E27BE;
+			remoteInfo = KOIponderer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C54BEBE1A688D4000CC4119 /* KPData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPData.h; sourceTree = "<group>"; };
+		1C54BEBF1A688D4000CC4119 /* KPData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPData.m; sourceTree = "<group>"; };
+		1C54BEC11A69A6C000CC4119 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1C54BEC21A69A6C000CC4119 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		1C54BEC31A69A6C000CC4119 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1CBAC95F1A6F72C400276D06 /* KOIs.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = KOIs.csv; sourceTree = SOURCE_ROOT; };
+		1CBAC9611A70D9A500276D06 /* KICandidateTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KICandidateTableView.h; sourceTree = "<group>"; };
+		1CBAC9621A70D9A500276D06 /* KICandidateTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KICandidateTableView.m; sourceTree = "<group>"; };
+		1CBFEF881A68786F003E27BE /* KOIponderer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KOIponderer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBFEF8B1A68786F003E27BE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1CBFEF8E1A68786F003E27BE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1CBFEF8F1A68786F003E27BE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1CBFEF901A68786F003E27BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1CBFEF931A68786F003E27BE /* KOIponderer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KOIponderer-Info.plist"; sourceTree = "<group>"; };
+		1CBFEF951A68786F003E27BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CBFEF971A68786F003E27BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CBFEF991A68786F003E27BE /* KOIponderer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KOIponderer-Prefix.pch"; sourceTree = "<group>"; };
+		1CBFEF9B1A68786F003E27BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1CBFEF9D1A68786F003E27BE /* KIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KIAppDelegate.h; sourceTree = "<group>"; };
+		1CBFEF9E1A68786F003E27BE /* KIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIAppDelegate.m; sourceTree = "<group>"; };
+		1CBFEFA11A68786F003E27BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1CBFEFA41A68786F003E27BE /* KOIponderer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KOIponderer.xcdatamodel; sourceTree = "<group>"; };
+		1CBFEFA61A68786F003E27BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1CBFEFAC1A68786F003E27BE /* KOIpondererTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KOIpondererTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CBFEFAD1A68786F003E27BE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1CBFEFB41A68786F003E27BE /* KOIpondererTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KOIpondererTests-Info.plist"; sourceTree = "<group>"; };
+		1CBFEFB61A68786F003E27BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CBFEFB81A68786F003E27BE /* KOIpondererTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KOIpondererTests.m; sourceTree = "<group>"; };
+		1CD58C971A8ED0E1000262DB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		1CD58C991A8ED952000262DB /* KOIponderer.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = KOIponderer.pdf; sourceTree = "<group>"; };
+		1CDD291B1A687DFC007D1FF5 /* FITSCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSCard.h; sourceTree = "<group>"; };
+		1CDD291C1A687DFC007D1FF5 /* FITSCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITSCard.m; sourceTree = "<group>"; };
+		1CDD291D1A687DFC007D1FF5 /* FITSFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSFile.h; sourceTree = "<group>"; };
+		1CDD291E1A687DFC007D1FF5 /* FITSFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITSFile.m; sourceTree = "<group>"; };
+		1CDD291F1A687DFC007D1FF5 /* FITSHeaderDataUnit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITSHeaderDataUnit.h; sourceTree = "<group>"; };
+		1CDD29201A687DFC007D1FF5 /* FITSHeaderDataUnit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITSHeaderDataUnit.m; sourceTree = "<group>"; };
+		1CDD29241A687E3C007D1FF5 /* KDWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDWindowController.h; sourceTree = "<group>"; };
+		1CDD29251A687E3C007D1FF5 /* KDWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDWindowController.m; sourceTree = "<group>"; };
+		1CDD29261A687E3C007D1FF5 /* KeplerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeplerData.h; sourceTree = "<group>"; };
+		1CDD29281A687E89007D1FF5 /* KIGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIGLView.h; sourceTree = "<group>"; };
+		1CDD29291A687E89007D1FF5 /* KIGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIGLView.m; sourceTree = "<group>"; };
+		1CDD292A1A687E89007D1FF5 /* KINotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KINotifications.h; sourceTree = "<group>"; };
+		1CDD292B1A687E89007D1FF5 /* KINotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KINotifications.m; sourceTree = "<group>"; };
+		1CDD292C1A687E89007D1FF5 /* KIStackCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIStackCurve.h; sourceTree = "<group>"; };
+		1CDD292D1A687E89007D1FF5 /* KIStackCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIStackCurve.m; sourceTree = "<group>"; };
+		1CDD292E1A687E89007D1FF5 /* KIStarsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIStarsController.h; sourceTree = "<group>"; };
+		1CDD292F1A687E89007D1FF5 /* KIStarsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIStarsController.m; sourceTree = "<group>"; };
+		1CDD29341A687EAD007D1FF5 /* KPCandidate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPCandidate.h; sourceTree = "<group>"; };
+		1CDD29351A687EAD007D1FF5 /* KPCandidate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPCandidate.m; sourceTree = "<group>"; };
+		1CDD29381A687EAD007D1FF5 /* KPLightCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPLightCurve.h; sourceTree = "<group>"; };
+		1CDD29391A687EAD007D1FF5 /* KPLightCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPLightCurve.m; sourceTree = "<group>"; };
+		1CDD293A1A687EAD007D1FF5 /* KPLightCurve+AddOns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KPLightCurve+AddOns.h"; sourceTree = "<group>"; };
+		1CDD293B1A687EAD007D1FF5 /* KPLightCurve+AddOns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KPLightCurve+AddOns.m"; sourceTree = "<group>"; };
+		1CDD293C1A687EAD007D1FF5 /* KPOcclusion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPOcclusion.h; sourceTree = "<group>"; };
+		1CDD293D1A687EAD007D1FF5 /* KPOcclusion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPOcclusion.m; sourceTree = "<group>"; };
+		1CDD293E1A687EAD007D1FF5 /* KPStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPStar.h; sourceTree = "<group>"; };
+		1CDD293F1A687EAD007D1FF5 /* KPStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPStar.m; sourceTree = "<group>"; };
+		1CDD29401A687EAD007D1FF5 /* KPStar+AddOns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KPStar+AddOns.h"; sourceTree = "<group>"; };
+		1CDD29411A687EAD007D1FF5 /* KPStar+AddOns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KPStar+AddOns.m"; sourceTree = "<group>"; };
+		1CDD294A1A687F10007D1FF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/Downloader.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CBFEF851A68786F003E27BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C54BEC41A69A6C000CC4119 /* OpenGL.framework in Frameworks */,
+				1C54BEC51A69A6C000CC4119 /* Quartz.framework in Frameworks */,
+				1C54BEC61A69A6C000CC4119 /* WebKit.framework in Frameworks */,
+				1CBFEF8C1A68786F003E27BE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CBFEFA91A68786F003E27BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CBFEFAF1A68786F003E27BE /* Cocoa.framework in Frameworks */,
+				1CBFEFAE1A68786F003E27BE /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CBFEF7F1A68786F003E27BE = {
+			isa = PBXGroup;
+			children = (
+				1CBFEF911A68786F003E27BE /* KOIponderer */,
+				1CBFEFB21A68786F003E27BE /* KOIpondererTests */,
+				1CBFEF8A1A68786F003E27BE /* Frameworks */,
+				1CBFEF891A68786F003E27BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CBFEF891A68786F003E27BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CBFEF881A68786F003E27BE /* KOIponderer.app */,
+				1CBFEFAC1A68786F003E27BE /* KOIpondererTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CBFEF8A1A68786F003E27BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C54BEC11A69A6C000CC4119 /* OpenGL.framework */,
+				1C54BEC21A69A6C000CC4119 /* Quartz.framework */,
+				1C54BEC31A69A6C000CC4119 /* WebKit.framework */,
+				1CBFEF8B1A68786F003E27BE /* Cocoa.framework */,
+				1CBFEFAD1A68786F003E27BE /* XCTest.framework */,
+				1CBFEF8D1A68786F003E27BE /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CBFEF8D1A68786F003E27BE /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CBFEF8E1A68786F003E27BE /* AppKit.framework */,
+				1CBFEF8F1A68786F003E27BE /* CoreData.framework */,
+				1CBFEF901A68786F003E27BE /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1CBFEF911A68786F003E27BE /* KOIponderer */ = {
+			isa = PBXGroup;
+			children = (
+				1CBFEFA01A68786F003E27BE /* MainMenu.xib */,
+				1CBAC95F1A6F72C400276D06 /* KOIs.csv */,
+				1CDD29491A687F10007D1FF5 /* Downloader.xib */,
+				1CBFEFA31A68786F003E27BE /* KOIponderer.xcdatamodeld */,
+				1C54BEBE1A688D4000CC4119 /* KPData.h */,
+				1C54BEBF1A688D4000CC4119 /* KPData.m */,
+				1CBFEF9D1A68786F003E27BE /* KIAppDelegate.h */,
+				1CBFEF9E1A68786F003E27BE /* KIAppDelegate.m */,
+				1CDD29281A687E89007D1FF5 /* KIGLView.h */,
+				1CDD29291A687E89007D1FF5 /* KIGLView.m */,
+				1CBAC9611A70D9A500276D06 /* KICandidateTableView.h */,
+				1CBAC9621A70D9A500276D06 /* KICandidateTableView.m */,
+				1CDD29401A687EAD007D1FF5 /* KPStar+AddOns.h */,
+				1CDD29411A687EAD007D1FF5 /* KPStar+AddOns.m */,
+				1CDD293A1A687EAD007D1FF5 /* KPLightCurve+AddOns.h */,
+				1CDD293B1A687EAD007D1FF5 /* KPLightCurve+AddOns.m */,
+				1CDD29341A687EAD007D1FF5 /* KPCandidate.h */,
+				1CDD29351A687EAD007D1FF5 /* KPCandidate.m */,
+				1CDD29381A687EAD007D1FF5 /* KPLightCurve.h */,
+				1CDD29391A687EAD007D1FF5 /* KPLightCurve.m */,
+				1CDD293C1A687EAD007D1FF5 /* KPOcclusion.h */,
+				1CDD293D1A687EAD007D1FF5 /* KPOcclusion.m */,
+				1CDD293E1A687EAD007D1FF5 /* KPStar.h */,
+				1CDD293F1A687EAD007D1FF5 /* KPStar.m */,
+				1CDD292A1A687E89007D1FF5 /* KINotifications.h */,
+				1CDD292B1A687E89007D1FF5 /* KINotifications.m */,
+				1CDD292C1A687E89007D1FF5 /* KIStackCurve.h */,
+				1CDD292D1A687E89007D1FF5 /* KIStackCurve.m */,
+				1CDD292E1A687E89007D1FF5 /* KIStarsController.h */,
+				1CDD292F1A687E89007D1FF5 /* KIStarsController.m */,
+				1CDD29241A687E3C007D1FF5 /* KDWindowController.h */,
+				1CDD29251A687E3C007D1FF5 /* KDWindowController.m */,
+				1CDD29261A687E3C007D1FF5 /* KeplerData.h */,
+				1CDD291B1A687DFC007D1FF5 /* FITSCard.h */,
+				1CDD291C1A687DFC007D1FF5 /* FITSCard.m */,
+				1CDD291D1A687DFC007D1FF5 /* FITSFile.h */,
+				1CDD291E1A687DFC007D1FF5 /* FITSFile.m */,
+				1CDD291F1A687DFC007D1FF5 /* FITSHeaderDataUnit.h */,
+				1CDD29201A687DFC007D1FF5 /* FITSHeaderDataUnit.m */,
+				1CBFEFA61A68786F003E27BE /* Images.xcassets */,
+				1CBFEF921A68786F003E27BE /* Supporting Files */,
+				1CD58C971A8ED0E1000262DB /* README.md */,
+				1CD58C991A8ED952000262DB /* KOIponderer.pdf */,
+			);
+			path = KOIponderer;
+			sourceTree = "<group>";
+		};
+		1CBFEF921A68786F003E27BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CBFEF931A68786F003E27BE /* KOIponderer-Info.plist */,
+				1CBFEF941A68786F003E27BE /* InfoPlist.strings */,
+				1CBFEF971A68786F003E27BE /* main.m */,
+				1CBFEF991A68786F003E27BE /* KOIponderer-Prefix.pch */,
+				1CBFEF9A1A68786F003E27BE /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1CBFEFB21A68786F003E27BE /* KOIpondererTests */ = {
+			isa = PBXGroup;
+			children = (
+				1CBFEFB81A68786F003E27BE /* KOIpondererTests.m */,
+				1CBFEFB31A68786F003E27BE /* Supporting Files */,
+			);
+			path = KOIpondererTests;
+			sourceTree = "<group>";
+		};
+		1CBFEFB31A68786F003E27BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CBFEFB41A68786F003E27BE /* KOIpondererTests-Info.plist */,
+				1CBFEFB51A68786F003E27BE /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CBFEF871A68786F003E27BE /* KOIponderer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CBFEFBC1A68786F003E27BE /* Build configuration list for PBXNativeTarget "KOIponderer" */;
+			buildPhases = (
+				1CBFEF841A68786F003E27BE /* Sources */,
+				1CBFEF851A68786F003E27BE /* Frameworks */,
+				1CBFEF861A68786F003E27BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KOIponderer;
+			productName = KOIponderer;
+			productReference = 1CBFEF881A68786F003E27BE /* KOIponderer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1CBFEFAB1A68786F003E27BE /* KOIpondererTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CBFEFBF1A68786F003E27BE /* Build configuration list for PBXNativeTarget "KOIpondererTests" */;
+			buildPhases = (
+				1CBFEFA81A68786F003E27BE /* Sources */,
+				1CBFEFA91A68786F003E27BE /* Frameworks */,
+				1CBFEFAA1A68786F003E27BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CBFEFB11A68786F003E27BE /* PBXTargetDependency */,
+			);
+			name = KOIpondererTests;
+			productName = KOIpondererTests;
+			productReference = 1CBFEFAC1A68786F003E27BE /* KOIpondererTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CBFEF801A68786F003E27BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KI;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Richard Nerf";
+				TargetAttributes = {
+					1CBFEFAB1A68786F003E27BE = {
+						TestTargetID = 1CBFEF871A68786F003E27BE;
+					};
+				};
+			};
+			buildConfigurationList = 1CBFEF831A68786F003E27BE /* Build configuration list for PBXProject "KOIponderer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1CBFEF7F1A68786F003E27BE;
+			productRefGroup = 1CBFEF891A68786F003E27BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CBFEF871A68786F003E27BE /* KOIponderer */,
+				1CBFEFAB1A68786F003E27BE /* KOIpondererTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CBFEF861A68786F003E27BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CBAC9601A6F72C400276D06 /* KOIs.csv in Resources */,
+				1CD58C9A1A8ED952000262DB /* KOIponderer.pdf in Resources */,
+				1CBFEF961A68786F003E27BE /* InfoPlist.strings in Resources */,
+				1CBFEFA71A68786F003E27BE /* Images.xcassets in Resources */,
+				1CD58C981A8ED0E1000262DB /* README.md in Resources */,
+				1CBFEF9C1A68786F003E27BE /* Credits.rtf in Resources */,
+				1CBFEFA21A68786F003E27BE /* MainMenu.xib in Resources */,
+				1CDD294B1A687F10007D1FF5 /* Downloader.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CBFEFAA1A68786F003E27BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CBFEFB71A68786F003E27BE /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CBFEF841A68786F003E27BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CBFEFA51A68786F003E27BE /* KOIponderer.xcdatamodeld in Sources */,
+				1CDD29311A687E89007D1FF5 /* KINotifications.m in Sources */,
+				1CDD29461A687EAD007D1FF5 /* KPOcclusion.m in Sources */,
+				1CDD29321A687E89007D1FF5 /* KIStackCurve.m in Sources */,
+				1CDD29441A687EAD007D1FF5 /* KPLightCurve.m in Sources */,
+				1CDD29221A687DFC007D1FF5 /* FITSFile.m in Sources */,
+				1CDD29331A687E89007D1FF5 /* KIStarsController.m in Sources */,
+				1CDD29471A687EAD007D1FF5 /* KPStar.m in Sources */,
+				1CDD29451A687EAD007D1FF5 /* KPLightCurve+AddOns.m in Sources */,
+				1CBAC9631A70D9A500276D06 /* KICandidateTableView.m in Sources */,
+				1CDD29271A687E3C007D1FF5 /* KDWindowController.m in Sources */,
+				1CDD29211A687DFC007D1FF5 /* FITSCard.m in Sources */,
+				1CBFEF9F1A68786F003E27BE /* KIAppDelegate.m in Sources */,
+				1C54BEC01A688D4000CC4119 /* KPData.m in Sources */,
+				1CDD29421A687EAD007D1FF5 /* KPCandidate.m in Sources */,
+				1CDD29231A687DFC007D1FF5 /* FITSHeaderDataUnit.m in Sources */,
+				1CBFEF981A68786F003E27BE /* main.m in Sources */,
+				1CDD29301A687E89007D1FF5 /* KIGLView.m in Sources */,
+				1CDD29481A687EAD007D1FF5 /* KPStar+AddOns.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CBFEFA81A68786F003E27BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CBFEFB91A68786F003E27BE /* KOIpondererTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CBFEFB11A68786F003E27BE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CBFEF871A68786F003E27BE /* KOIponderer */;
+			targetProxy = 1CBFEFB01A68786F003E27BE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1CBFEF941A68786F003E27BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CBFEF951A68786F003E27BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CBFEF9A1A68786F003E27BE /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CBFEF9B1A68786F003E27BE /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1CBFEFA01A68786F003E27BE /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CBFEFA11A68786F003E27BE /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1CBFEFB51A68786F003E27BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CBFEFB61A68786F003E27BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CDD29491A687F10007D1FF5 /* Downloader.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CDD294A1A687F10007D1FF5 /* Base */,
+			);
+			name = Downloader.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CBFEFBA1A68786F003E27BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1CBFEFBB1A68786F003E27BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1CBFEFBD1A68786F003E27BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KOIponderer/KOIponderer-Prefix.pch";
+				INFOPLIST_FILE = "KOIponderer/KOIponderer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1CBFEFBE1A68786F003E27BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KOIponderer/KOIponderer-Prefix.pch";
+				INFOPLIST_FILE = "KOIponderer/KOIponderer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1CBFEFC01A68786F003E27BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KOIponderer.app/Contents/MacOS/KOIponderer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KOIponderer/KOIponderer-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "KOIpondererTests/KOIpondererTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1CBFEFC11A68786F003E27BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/KOIponderer.app/Contents/MacOS/KOIponderer";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KOIponderer/KOIponderer-Prefix.pch";
+				INFOPLIST_FILE = "KOIpondererTests/KOIpondererTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CBFEF831A68786F003E27BE /* Build configuration list for PBXProject "KOIponderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CBFEFBA1A68786F003E27BE /* Debug */,
+				1CBFEFBB1A68786F003E27BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CBFEFBC1A68786F003E27BE /* Build configuration list for PBXNativeTarget "KOIponderer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CBFEFBD1A68786F003E27BE /* Debug */,
+				1CBFEFBE1A68786F003E27BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CBFEFBF1A68786F003E27BE /* Build configuration list for PBXNativeTarget "KOIpondererTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CBFEFC01A68786F003E27BE /* Debug */,
+				1CBFEFC11A68786F003E27BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1CBFEFA31A68786F003E27BE /* KOIponderer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1CBFEFA41A68786F003E27BE /* KOIponderer.xcdatamodel */,
+			);
+			currentVersion = 1CBFEFA41A68786F003E27BE /* KOIponderer.xcdatamodel */;
+			path = KOIponderer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1CBFEF801A68786F003E27BE /* Project object */;
+}
