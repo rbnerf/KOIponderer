@@ -40,14 +40,14 @@ The KOI Ponderer application initially contains a database of some seven thousan
 ### To Build
 	* Obtain Xcode from the Mac App Store
 	* Use Safari to view https://github.com/rbnerf/KOIponderer#koi-ponderer
-	* At lower right, press button [Download ZIP]
+	* At bottom of right column, press button [Download ZIP]
 	* When download is complete, file will be unzipped into a directory
 	named KOIponderer-master
 	* Use Finder to view the contents of that directory
 	* Double-click on KOIponderer.xcodeproject; Xcode will launch.
 	* If you are not an "Admin" user, make sure the "Scheme" at upper left
 	is KOIrelease, rather than KOIponderer.
-	* Press the Arrow key at upper right to initiate Build/Run.
+	* Press the Arrow key at upper left to initiate Build/Run.
 	* "Normal" error messages: 
 		Downloader.xib -- Unsupported configuration
 		Images.xcassets -- A bunch of contradictory complaints about image dimensions.
